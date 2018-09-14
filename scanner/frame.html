@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frame</title>
+    <style>
+        .viewport {
+            width: 100%;
+            position: relative;
+        }
+        video {
+            width: 100%;
+        }
+        canvas {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    Frame text
+
+    <div>
+        <button id="stop-button">Stop</button>
+    </div>
+
+    <div id="video-container" class="viewport">
+        <video autoplay="true" preload="auto" src="" id="video-element"></video>
+    </div>
+
+    <canvas id="canvas-qr" height="480" width="640" style="visibility: hidden"></canvas>
+
+    <script src="js/quagga.js"></script>
+    <script src="js/jsQR.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
